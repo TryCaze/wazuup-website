@@ -18,8 +18,6 @@
 import type { Metadata } from "next";
 import { Pixelify_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "./components/ui/header";
-import Footer from "./components/ui/footer";
 
 const PixelifySans = Pixelify_Sans({
   subsets: ["latin"],
@@ -39,9 +37,7 @@ export default function RootLayout({
     <html lang="en" className="bg-black">
       <body
         className={PixelifySans.className}>
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

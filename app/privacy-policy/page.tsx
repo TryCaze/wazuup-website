@@ -1,8 +1,12 @@
 // app/privacy/page.tsx
 import Link from 'next/link';
+import Header from '../components/ui/header';
+import Footer from '../components/ui/footer';
 
 export default function PrivacyPolicy() {
   return (
+    <>
+    <Header />
     <div className="min-h-screen text-white py-12 my-5">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -21,7 +25,7 @@ export default function PrivacyPolicy() {
         </div>
 
         {/* Content */}
-        <div className="bg-gray-800 rounded-lg p-8 space-y-8">
+        <div className="bg-gray-900/80 border-gray-800 rounded-lg p-8 space-y-8">
           <section>
             <h2 className="text-2xl font-semibold mb-4">Wazuup respects your privacy. <br />This Privacy Policy explains what information we collect, how we use it, and your rights regarding your information.</h2>
             <h2 className="text-2xl font-semibold mb-4">1. Information We Collect</h2>
@@ -78,5 +82,7 @@ export default function PrivacyPolicy() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }

@@ -7,10 +7,10 @@ import Link from "next/link";
 
 export default function LandingPage() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-white px-8 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center text-white px-8 overflow-hidden md:mt-0 mt-6">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-black to-black" />
       <div
-        className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none"
+      className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none"
       />
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl w-full">
         <div className="space-y-6 relative">

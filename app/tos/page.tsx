@@ -1,8 +1,12 @@
 import Link from 'next/link';
+import Header from '../components/ui/header';
+import Footer from '../components/ui/footer';
 
 export default function TermsOfService() {
     return (
-        <div className="min-h-screen bg-gray-900 text-white py-12 my-5">
+        <>
+        <Header />
+        <div className="min-h-screen text-white py-12 my-5">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <Link 
@@ -19,7 +23,7 @@ export default function TermsOfService() {
                 </div>
 
                 {/* Content */}
-                <div className="bg-gray-800 rounded-lg p-8 space-y-8">
+                <div className="bg-gray-900/80 border-gray-800 rounded-lg p-8 space-y-8">
                     <section>
                         <p className="text-gray-300 mb-4">
                             By using Wazuup, you agree to these Terms of Service.
@@ -80,5 +84,7 @@ export default function TermsOfService() {
                 </div>
             </div>
         </div>
+        <Footer />
+        </>
     );
 }

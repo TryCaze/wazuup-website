@@ -58,7 +58,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <nav className="flex flex-col items-start gap-4 px-6 py-4 bg-black/80 text-white md:hidden">
+        <nav className="flex flex-col items-start gap-4 px-6 py-4 bg-transparent text-white md:hidden">
           <Link href="#features">Features</Link>
           <Link href="/documentation">Docs</Link>
           <Link href="#">Invite</Link>
